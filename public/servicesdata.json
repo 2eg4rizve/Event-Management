@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Weddings",
+    "images": [
+      "https://example.com/images/wedding1.jpg",
+      "https://example.com/images/wedding2.jpg",
+      "https://example.com/images/wedding3.jpg"
+    ],
+    "price": 1000,
+    "short_description": "A wedding is a special day for two people to celebrate their love and commitment to each other.",
+    "long_description": "A wedding is a formal ceremony by which two people become husband and wife. It is a ritualized union that is recognized by society as a binding contract. Weddings are often celebrated with a ceremony and a reception. The ceremony is a formal ritual that unites the couple in marriage. The reception is a party held to celebrate the marriage. Weddings can be religious or secular, and they can be simple or elaborate."
+  },
+  {
+    "id": 2,
+    "name": "Birthday Parties",
+    "images": [
+      "https://example.com/images/birthday1.jpg",
+      "https://example.com/images/birthday2.jpg",
+      "https://example.com/images/birthday3.jpg"
+    ],
+    "price": 2000,
+    "short_description": "A birthday party is a celebration of a person's birth.",
+    "long_description": "A birthday party is a celebration of the anniversary of a person's birth. It is a time for family and friends to come together to celebrate the person's life. Birthday parties can be simple or elaborate, but they always involve cake and presents. The person whose birthday it is is often the center of attention, and they are often showered with gifts. Birthday parties can be a lot of fun, and they are a great way to celebrate with loved ones."
+  },
+  {
+    "id": 3,
+    "name": "Anniversaries",
+    "images": [
+      "https://example.com/images/anniversary1.jpg",
+      "https://example.com/images/anniversary2.jpg",
+      "https://example.com/images/anniversary3.jpg"
+    ],
+    "price": 3000,
+    "short_description": "An anniversary is a celebration of a special event that happened on a particular date in the past.",
+    "long_description": "An anniversary is a celebration of a special event that happened on a particular date in the past. Anniversaries can be celebrated for many different things, such as weddings, births, deaths, and job promotions. The most common type of anniversary is a wedding anniversary. A wedding anniversary is a celebration of the date on which a couple got married. Wedding anniversaries are often celebrated with gifts and parties."
+  },
+  {
+    "id": 4,
+    "name": "Engagement Parties",
+    "images": [
+      "https://example.com/images/engagement1.jpg",
+      "https://example.com/images/engagement2.jpg",
+      "https://example.com/images/engagement3.jpg"
+    ],
+    "price": 4000,
+    "short_description": "An engagement party is a celebration of the engagement of two people.",
+    "long_description": "An engagement party is a celebration of the engagement of two people. It is a time for family and friends to come together to celebrate the couple's love and commitment to each other. Engagement parties can be simple or elaborate, but they always involve food, drinks, and cake. The couple often receives gifts from their guests. Engagement parties are a lot of fun, and they are a great way to celebrate with loved ones."
+  },
+  {
+    "id": 5,
+    "name": "Retirement Parties",
+    "images": [
+      "https://example.com/images/retirement1.jpg",
+      "https://example.com/images/retirement2.jpg",
+      "https://example.com/images/retirement3.jpg"
+    ],
+    "price": 5000,
+    "short_description": "A retirement party is a celebration of a person's retirement from work.",
+    "long_description": "A retirement party is a celebration of a person's retirement from work. It is a time for family and friends to come together to celebrate the person's hard work and dedication over the years. Retirement parties can be simple or elaborate, but they always involve food, drinks, and cake. The retiree often receives gifts"
+  },
+  {
+    "id": 6,
+    "name": "Baby Shower",
+    "images": [
+      "https://example.com/images/retirement1.jpg",
+      "https://example.com/images/retirement2.jpg",
+      "https://example.com/images/retirement3.jpg"
+    ],
+    "price": 6000,
+    "short_description": "Welcome the new arrival with joy.A sweet celebration for a baby .",
+    "long_description": "Host a baby shower for a baby boy with adorable decorations, games, and a cake that will delight your guests.Celebrate the pending arrival of a baby girl with a pink-themed baby shower, complete with sweets, gifts, and good company"
+  }
+]
