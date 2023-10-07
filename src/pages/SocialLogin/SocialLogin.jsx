@@ -33,13 +33,13 @@ const SocialLogin = () => {
 
                 <button
                     onClick={() => handleSocialLogin(googleLogin)}
-                    className="btn btn-neutral ctn-sm ">Google
+                    className="btn btn-primary   text-black bg-[#F4E869]">Google
                 </button>
 
 
                 <button
                     onClick={() => handleSocialLogin(githubLogin)}
-                    className="btn btn-neutral ctn-sm ">Github
+                    className="btn btn-primary   text-black bg-[#F4E869]">Github
                 </button>
 
 

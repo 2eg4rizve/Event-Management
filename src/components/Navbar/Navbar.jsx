@@ -12,7 +12,7 @@ const Navbar = () => {
         <NavLink
             to="/"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline" : ""
             }
         >
             Home
@@ -23,7 +23,7 @@ const Navbar = () => {
         <NavLink
             to="/about"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-green-400 underline " : ""
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline " : ""
             }
         >
             About
@@ -34,7 +34,7 @@ const Navbar = () => {
         <NavLink
             to="/services"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline" : ""
             }
         >
             Services
@@ -46,7 +46,7 @@ const Navbar = () => {
         <NavLink
             to="/blog"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline" : ""
             }
         >
             Blog
@@ -60,9 +60,9 @@ const Navbar = () => {
 
 
     return (
-        <div className="mb-[50px] sticky z-10">
+        <div className="mb-[50px] sticky z-50 ">
 
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -75,7 +75,7 @@ const Navbar = () => {
                     <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 text-[20px]">
                         {navLink}
                     </ul>
                 </div>
@@ -95,11 +95,11 @@ const Navbar = () => {
                                 <div>
                                     <button
                                         onClick={logOut}
-                                        className="btn btn-sm  btn-ghost">Logout</button>
+                                        className="btn btn-sm  btn-primary bg-[#F4E869] text-black">Logout</button>
 
                                 </div>
                             </div>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  bg-[#ACBCFF] pb-[100px] z-20">
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  bg-[#F4E869] pb-[100px] z-20">
                                 <li>
                                     <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
                                     <button className="btn btn-sm  btn-ghost">{user.email}</button>
@@ -108,7 +108,7 @@ const Navbar = () => {
                                 <li>
                                     <button
                                         onClick={logOut}
-                                        className="btn btn-sm  btn-ghost">Logout</button>
+                                        className="btn btn-sm btn-primary bg-[#F4E869] text-black">Logout</button>
 
                                 </li>
                             </ul>
@@ -116,11 +116,11 @@ const Navbar = () => {
                             :
                             <div>
                                 <Link to='/login'>
-                                    <button className="btn btn-sm  btn-ghost bg-[#F4E869]">Login</button>
+                                    <button className="btn btn-sm  btn-primary bg-[#F4E869] text-black">Login</button>
                                 </Link>
                                 /
                                 <Link to='/register'>
-                                    <button className="btn btn-sm  btn-ghost bg-[#F4E869]">Register</button>
+                                    <button className="btn btn-sm text-black btn-primary bg-[#F4E869]">Register</button>
                                 </Link>
 
                             </div>

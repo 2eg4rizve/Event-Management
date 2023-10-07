@@ -55,7 +55,7 @@ const Sdetails = () => {
             </div>
 
             <div className='flex mb-[30px]  mt-[30px]'>
-                <button className='btn btn-primary'>Contact Us</button>
+                <button className='btn btn-primary bg-[#F4E869] text-black'>Contact Us</button>
                 <Marquee pauseOnHover={true} speed={150}>
                     <p className='text-green-500 mr-[50px]'>Mobile : 01877777777</p>
                     <p className='text-green-500 mr-[50px]'>Mobile : 01988888888</p>
