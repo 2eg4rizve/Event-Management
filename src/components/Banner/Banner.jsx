@@ -18,6 +18,7 @@ const Banner = () => {
                    <p className='text-red-500 mr-[50px]'>Mobile : 01766666666</p>
                    <p className='text-red-500 mr-[50px]'>Email : Riz@gmail.com</p>
                    <p className='text-red-500 mr-[50px]'>Facebook : Riz@gmail.com</p>
+                   <p className='text-red-500 mr-[50px]'>Address : Halishahar, Chittagong</p>
                 </Marquee>
             </div>
 

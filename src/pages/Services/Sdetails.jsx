@@ -53,25 +53,12 @@ const Sdetails = () => {
             <p className="mt-[50px] text-center" >{long_description}</p>
 
 
-            {/* <div>
-                {images.map((imageUrl, index) => (
-                    <img key={index} src={imageUrl} alt={`Image ${index + 1}`} />
-                ))}
-            </div> */}
-
-            {/* <img src={firstImageSource} alt="First image" /> */}
-
 
             <h2 className="my-[40px] font-bold text-3xl text-center">Price : {price}$ - {price * 10}$ </h2>
 
 
-
-
-
-
-
             <div>
-                {/* <Swiper
+            <Swiper
                 style={{
                     "--swiper-pagination-color": "red",
                     "--swiper-navigation-color": "green",
@@ -91,13 +78,22 @@ const Sdetails = () => {
                 className="mySwiper"
 
             >
-                <SwiperSlide><img src={firstImage} alt="" /></SwiperSlide>
-                
+                <SwiperSlide><img className='h-[400px] w-full' src="/public/Banner/b1.jpg" alt="" /></SwiperSlide>
+                <SwiperSlide><img className='h-[400px] w-full' src="/public/Banner/b2.jpg" alt="" /></SwiperSlide>
+                <SwiperSlide><img className='h-[400px] w-full' src="/public/Banner/b3.jpg" alt="" /></SwiperSlide>
+               
 
 
-            </Swiper> */}
+            </Swiper>
             </div>
 
+
+
+
+
+
+
+         
 
 
 

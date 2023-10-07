@@ -21,7 +21,6 @@ const SCards = ({ service }) => {
 
                     <h2 className="card-title">{name}</h2>
 
-                    <h2 className="card-title">Price : {price}$ - {price*10}$ </h2>
                     <p>{short_description}</p>
 
                     {/*  <Link to = {`/viewrecipes/${id}`} > */}
