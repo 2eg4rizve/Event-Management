@@ -12,7 +12,7 @@ const Register = () => {
    
     const { createUser, handleUpdateProfile } = useAuth();
 
-    const useNavigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
 
@@ -37,7 +37,7 @@ const Register = () => {
                 handleUpdateProfile(name, img)
                     .then(() => {
                         toast.success("User Created Successfully")
-                        Navigate('/')
+                        navigate('/')
                     })
             })
             .catch(error => {

@@ -59,10 +59,14 @@ const AuthProvider = ({ children }) => {
 
     //user observer
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
+        const unSubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user);
             setLoading(false);
         });
+
+        return () => {
+            unSubscribe()
+        }
 
     }, [])
 
@@ -77,20 +81,13 @@ const AuthProvider = ({ children }) => {
         logOut,
         user,
         loading,
-        githubLogin ,
+        githubLogin,
         handleUpdateProfile
 
 
     }
 
-    //user observer
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            setUser(user);
-            setLoading(false);
-        });
-
-    }, [])
+   
 
 
     return (

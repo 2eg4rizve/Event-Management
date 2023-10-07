@@ -19,19 +19,21 @@ const Services = () => {
 
     return (
         <div className="mt-[50px]">
-            <p> Services page : {services.length}</p>
+            {/* <p> Services page : {services.length}</p> */}
+
+            <h1 className="text-5xl font-bold text-center">Services</h1>
 
             <div className="grid  grid-cols-1 lg:grid-cols-3 gap-7">
 
                 {
                     services.map(service => <SCards key={service.id} service={service}></SCards>)
-                    
+
 
                 }
 
-           
 
-                
+
+
 
 
 

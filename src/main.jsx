@@ -15,6 +15,7 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import AuthProvider from './Provider/AuthProvider';
 import Sdetails from './pages/Services/Sdetails';
+import PivateRoute from './components/PivateRoute/PivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/serviceDetails/:id",
-        element: <Sdetails></Sdetails>,
+        element: <PivateRoute><Sdetails></Sdetails></PivateRoute>,
         loader: () => fetch("/servicesdata.json")
 
       },

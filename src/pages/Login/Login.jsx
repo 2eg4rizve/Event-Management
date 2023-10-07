@@ -27,12 +27,12 @@ const Login = () => {
 
         signIn(email, password)
             .then(() => {
-                toast.success("User Created Successfully")
-                Navigate('/')
+                toast.success("User logged in Successfully");
+                navigate('/')
                 
             })
             .catch(error => {
-                toast.success("User Created Successfully")
+                toast.error(error.message)
             })
 
     }
