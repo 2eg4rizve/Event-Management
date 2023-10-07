@@ -18,10 +18,10 @@ const Services = () => {
     // console.log(services)
 
     return (
-        <div>
+        <div className="mt-[50px]">
             <p> Services page : {services.length}</p>
 
-            <div className="grid grid-cols-3 gap-7">
+            <div className="grid  grid-cols-1 lg:grid-cols-3 gap-7">
 
                 {
                     services.map(service => <SCards key={service.id} service={service}></SCards>)

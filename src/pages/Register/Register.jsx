@@ -12,7 +12,7 @@ const Register = () => {
    
     const { createUser, handleUpdateProfile } = useAuth();
 
-    // const useNavigate = useNavigate();
+    const useNavigate = useNavigate();
 
     const handleSubmit = (e) => {
 

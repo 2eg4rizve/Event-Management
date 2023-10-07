@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import toast from "react-hot-toast";
 
 
 const Login = () => {
@@ -10,6 +11,8 @@ const Login = () => {
     const navigate = useNavigate();
 
     const { signIn } = useContext(AuthContext);
+
+  
 
     // console.log(me);
 
@@ -23,11 +26,13 @@ const Login = () => {
         console.log(email, password);
 
         signIn(email, password)
-            .then(res => {
-                alert("User login Successfully")
+            .then(() => {
+                toast.success("User Created Successfully")
+                Navigate('/')
+                
             })
             .catch(error => {
-                alert("no error massage")
+                toast.success("User Created Successfully")
             })
 
     }
