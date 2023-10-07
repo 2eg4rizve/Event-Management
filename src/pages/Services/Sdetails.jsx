@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -111,13 +112,115 @@ const Sdetails = () => {
             <div>
                 <h1 className='text-center text-5xl font-bold my-[50px]'> Features</h1>
 
-                <p className='font-semibold'>
+                <p className='font-semibold '>
+                    {features}
                     {features}
                 </p>
             </div>
 
             <div>
                 <Speciality></Speciality>
+            </div>
+
+
+
+
+
+
+            <div className='mt-[50px]'>
+                <p className='text-center text-5xl font-bold mb-[20px]'>Tier List For Price</p>
+                <Swiper
+                    style={{
+                        "--swiper-pagination-color": "red",
+                        "--swiper-navigation-color": "green",
+                    }}
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    loop={true}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Pagination, Navigation]}
+                // className="mySwiper"
+
+                >
+                    <SwiperSlide>
+                        <div className="card w-full h-[400px] bg-base-100 shadow-xl bg-[#F4E869]">
+
+                            <div className="card-body  ">
+                                <h2 className="card-title font-bold text-center justify-center text-4xl">Silver</h2>
+                                <p className='font-bold text-center justify-center text-3xl' >Price : {price}$ to {price + 2000}$ </p>
+
+
+                                <p className='text-center '>
+                                    Event management for weddings is an intricate process that encompasses a wide array of essential features. It begins with meticulous venue selection, considering factors like ambiance, capacity, and location. A wedding planner's expertise extends to theme and decor, where they create a visually captivating environment through floral arrangements, lighting, and decor elements.
+                                </p>
+
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary w-full">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className="card w-full h-[400px] bg-base-100 shadow-xl bg-[#F4E869]">
+
+                            <div className="card-body  ">
+                                <h2 className="card-title font-bold text-center justify-center text-4xl">Glod</h2>
+                                <p className='font-bold text-center justify-center text-3xl' >Price : {price + 2000}$ to {price + 4000}$ </p>
+
+
+                                <p className='text-center '>
+                                    Coordinating various vendors, from caterers to photographers and musicians, is crucial to ensure that every aspect aligns seamlessly. Timeline management is paramount, as planners meticulously schedule the ceremony, reception, and all activities to ensure a flawless day. Budget management is another key aspect, helping couples make informed choices while staying within their financial constraints. Managing guest lists, seating arrangements, and communication with attendees ensures that everyone enjoys the celebration. On the wedding day
+                                </p>
+
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary w-full">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+
+                    <SwiperSlide>
+                        <div className="card w-full h-[400px] bg-base-100 shadow-xl bg-[#F4E869]">
+
+                            <div className="card-body  ">
+                                <h2 className="card-title font-bold text-center justify-center text-4xl">Premium</h2>
+                                <p className='font-bold text-center justify-center text-3xl' >Price : {price + 4000}$ to {price + 6000}$ </p>
+
+
+                                <p className='text-center '>
+                                    Catering encompasses arranging food, snacks, and refreshments that suit the occasion, often with a touch of whimsy. Guest management involves handling guest invitations, RSVPs, and seating arrangements to ensure a harmonious gathering. Keepsakes or party favors are provided, offering guests a tangible memento of the special occasion. Overall, event managers strive to create a joyous and memorable atmosphere that celebrates the expectant mother and the exciting journey into parenthood.
+
+
+                                </p>
+
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary w-full">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+
+
+
+
+
+
+
+
+
+
+                </Swiper>
+
+
             </div>
 
 
