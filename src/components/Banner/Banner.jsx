@@ -10,8 +10,8 @@ const Banner = () => {
     return (
         <div>
 
-            <div className='flex mb-[20px]'>
-                <button className='btn btn-primary'>Contact Us</button>
+            <div className='flex mb-[20px] z-0'>
+                <button className='btn btn-primary bg-[#F4E869] text-black'>Contact Us</button>
                 <Marquee pauseOnHover={true} speed={150}>
                    <p className='text-red-500 mr-[50px]'>Mobile : 01877777777</p>
                    <p className='text-red-500 mr-[50px]'>Mobile : 01988888888</p>

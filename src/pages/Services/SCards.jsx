@@ -23,10 +23,10 @@ const SCards = ({ service }) => {
 
                     <p>{short_description}</p>
 
-                    {/*  <Link to = {`/viewrecipes/${id}`} > */}
+                   
                     <Link to={`/serviceDetails/${id}`}>
 
-                        <button className="btn btn-primary">View Details</button>
+                        <button className="btn btn-primary bg-[#F4E869] text-black">View Details</button>
 
                     </Link>
 

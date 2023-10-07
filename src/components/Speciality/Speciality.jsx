@@ -2,8 +2,9 @@
 
 const Speciality = () => {
     return (
-        <div>
-            <h1 className="text-5xl font-bold text-center mt-[50px]">Speciality </h1>
+        <div className="mt-[50px] max-h-full text-center font-bold bg-[url('/public/extra/Speciality2.avif')] bg-no-repeat bg-cover ">
+
+            <h1 className="text-5xl font-bold text-center pt-[50px]">Speciality </h1>
 
             <div className="font-semibold mt-[40px] space-y-3">
                 <li>
@@ -39,7 +40,7 @@ const Speciality = () => {
                 <li>
                     Green Event Planning: Promote eco-friendly event planning by suggesting sustainable practices and vendors, helping users reduce their environmental footprint.
                 </li>
-                <li>
+                <li className="pb-[80px]">
                     Event Inspiration Hub: Create a section of the platform dedicated to event inspiration, featuring real event stories, DIY ideas, and success stories from other users.
                 </li>
 

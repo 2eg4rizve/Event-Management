@@ -4,9 +4,9 @@
 const Faq = () => {
     return (
 
-        <div className="my-[50px]">
+        <div className="my-[50px] bg-[#F8FF95]">
 
-            <h1 className="text-5xl font-bold text-center">Frequently Asked Questions </h1>
+            <h1 className="text-5xl font-bold text-center pt-[20px]">Frequently Asked Questions </h1>
 
             <div className="space-y-3 mt-[40px]">
 

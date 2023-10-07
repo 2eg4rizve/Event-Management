@@ -60,7 +60,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="mb-[150px]">
+        <div className="mb-[50px] sticky z-10">
 
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
@@ -79,16 +79,27 @@ const Navbar = () => {
                         {navLink}
                     </ul>
                 </div>
+
                 <div className="navbar-end ">
 
                     {
                         user?.email ? <div className="dropdown dropdown-end">
-                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
-                                    <img src={user.photoURL} />
+                            <div className="flex flex-col md:flex-row items-center gap-2">
+                                <p>{user.email}</p>
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+
+                                    <div className="w-10 rounded-full">
+                                        <img src={user.photoURL} />
+                                    </div>
+                                </label>
+                                <div>
+                                    <button
+                                        onClick={logOut}
+                                        className="btn btn-sm  btn-ghost">Logout</button>
+
                                 </div>
-                            </label>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  bg-red-400">
+                            </div>
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  bg-[#ACBCFF] pb-[100px] z-20">
                                 <li>
                                     <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
                                     <button className="btn btn-sm  btn-ghost">{user.email}</button>
@@ -103,9 +114,20 @@ const Navbar = () => {
                             </ul>
                         </div>
                             :
-                            <Link to='/login'>
-                                <button className="btn btn-sm  btn-ghost">Login</button>
-                            </Link>
+                            <div>
+                                <Link to='/login'>
+                                    <button className="btn btn-sm  btn-ghost bg-[#F4E869]">Login</button>
+                                </Link>
+                                /
+                                <Link to='/register'>
+                                    <button className="btn btn-sm  btn-ghost bg-[#F4E869]">Register</button>
+                                </Link>
+
+                            </div>
+
+
+
+
                     }
                 </div>
 
