@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 
@@ -10,15 +10,17 @@ const PivateRoute = ({children}) => {
 
     console.log("loading  : ",loading);
 
+    const location = useLocation();
+
     //need to wait here
     if(loading){
-        return <h1 className="text-5xl">Loading</h1>
+        return <span className="loading loading-spinner loading-lg"></span>
     }
 
 
     // user cheek
     if(!user?.email){
-        return <Navigate to='/login'></Navigate>
+        return <Navigate state={location.pathname} to='/login'></Navigate>
     }
 
 
