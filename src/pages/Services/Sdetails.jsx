@@ -45,7 +45,7 @@ const Sdetails = () => {
     // const firstImageSource = images[0];
 
     return (
-        <div>
+        <div className=''>
 
             Service Details : {id};
 

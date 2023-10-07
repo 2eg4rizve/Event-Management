@@ -11,22 +11,22 @@ const SCards = ({ service }) => {
     return (
         <div className="mt-[50px]">
 
-            <div className="card   bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl text-center">
 
                 <figure><img className="w-full h-[300px]" src={image_main} alt="Shoes" /></figure>
 
-                <div className="card-body h-[300px]">
+                <div className="card-body h-[300px] text-center">
 
                     <h2> id : {id}</h2>
 
-                    <h2 className="card-title">{name}</h2>
+                    <h2 className="card-title text-center justify-center">{name}</h2>
 
                     <p>{short_description}</p>
 
                    
                     <Link to={`/serviceDetails/${id}`}>
 
-                        <button className="btn btn-primary bg-[#F4E869] text-black">View Details</button>
+                        <button className="btn btn-primary w-full bg-[#F4E869] text-black">View Details</button>
 
                     </Link>
 

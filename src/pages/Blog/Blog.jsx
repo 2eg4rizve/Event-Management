@@ -3,11 +3,12 @@
 
 const Blog = () => {
     return (
-        <div>
-              <h1 className="text-center text-5xl font-bold my-[50px]">  Blog </h1>
+        <div >
 
-            <div>
-              
+            <h1 className="text-center text-5xl font-bold my-[50px]">  Blog </h1>
+
+            <div className="mt-[50px]  p-[30px]">
+
 
                 <div className="mb-[20px]">
                     <p className="font-bold">Sarah Johnson (Weddings Enthusiast):</p>
@@ -62,6 +63,17 @@ const Blog = () => {
 
 
 
+
+            </div>
+
+            <br />
+
+            <div className="mt-[100px] space-y-3">
+                <input type="text" placeholder="Enter Your Name" className="input input-bordered w-full max-w-xs border-[#F4E869] border-2" />
+                <br />
+                <input type="text" placeholder="Enter Your Email" className="input input-bordered w-full max-w-xs border-[#F4E869] border-2" />
+
+                <textarea className="textarea border-[#F4E869] border-2 w-full min-h-[200px]" placeholder="Type Your Comment"></textarea>
 
             </div>
         </div>

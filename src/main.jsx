@@ -16,6 +16,8 @@ import Register from './pages/Register/Register';
 import AuthProvider from './Provider/AuthProvider';
 import Sdetails from './pages/Services/Sdetails';
 import PivateRoute from './components/PivateRoute/PivateRoute';
+import Speciality from './components/Speciality/Speciality';
+import ContactUs from './pages/ContactUs/ContactUs';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +47,16 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
+        path: "/speciality",
+        element: <Speciality></Speciality>
+
+      },
+      {
+        path: "/contactUs",
+        element: <ContactUs></ContactUs>
+
+      },
+      {
         path: "/login",
         element: <Login></Login>
       },
@@ -53,6 +65,7 @@ const router = createBrowserRouter([
         element: <Register></Register>
 
       }
+      
     ]
   },
 ]);

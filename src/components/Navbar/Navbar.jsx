@@ -12,7 +12,7 @@ const Navbar = () => {
         <NavLink
             to="/"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#362FD9] underline" : ""
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
             Home
@@ -23,7 +23,7 @@ const Navbar = () => {
         <NavLink
             to="/about"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#362FD9] underline " : ""
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
             About
@@ -34,7 +34,7 @@ const Navbar = () => {
         <NavLink
             to="/services"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#362FD9] underline" : ""
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
             Services
@@ -46,11 +46,36 @@ const Navbar = () => {
         <NavLink
             to="/blog"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#362FD9] underline" : ""
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
             Blog
         </NavLink>
+
+        <div className="mr-[20px]"></div>
+
+        <NavLink
+            to="/speciality"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
+            }
+        >
+            Speciality
+        </NavLink>
+
+        <div className="mr-[20px]"></div>
+
+        <NavLink
+            to="/contactUs"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
+            }
+        >
+           Contact Us
+
+        </NavLink>
+
+
 
 
 
@@ -60,7 +85,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="mb-[50px] sticky z-50 ">
+        <div className="mb-[50px] sticky top-0 z-50">
 
             <div className="navbar bg-base-100 ">
                 <div className="navbar-start">
