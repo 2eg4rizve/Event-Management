@@ -13,7 +13,7 @@ const About = () => {
 
     }, [])
     return (
-        <div className="mt-[50px] max-h-full text-center font-bold bg-[url('/public/extra/about6.webp')] bg-no-repeat bg-cover " data-aos="fade-left">
+        <div className="mt-[50px] max-h-full text-center font-bold bg-[url('/public/extra/about6.webp')] bg-no-repeat bg-cover " data-aos="fade-up">
 
             <ScrollRestoration />
 

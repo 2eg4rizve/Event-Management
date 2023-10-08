@@ -22,7 +22,7 @@ const Tier = () => {
 
 
     return (
-        <div data-aos = "flip-up">
+        <div data-aos = "fade-up">
            
 
             <div className='mt-[100px] mb-[100px]'>

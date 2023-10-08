@@ -65,7 +65,7 @@ const Speciality = () => {
             <ScrollRestoration />
 
 
-            <div className="mt-[50px]" data-aos="fade-right">
+            <div className="mt-[50px]" data-aos="fade-up">
 
                 <div className="hero max-h-full" style={{ backgroundImage: 'url("/public/extra/Speciality1.avif")' }}>
                     <div className="hero-overlay bg-opacity-40"></div>
