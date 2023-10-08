@@ -95,10 +95,11 @@ const Login = () => {
                             </label>
 
 
-                            <SocialLogin></SocialLogin>
+                          
 
 
                         </form>
+                        <SocialLogin></SocialLogin>
                     </div>
                 </div>
             </div>

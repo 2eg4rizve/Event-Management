@@ -133,14 +133,17 @@ const Navbar = () => {
 
                     {
                         user?.email ? <div className="dropdown dropdown-end">
-                            <div className="flex flex-col md:flex-row items-center gap-2">
-                                <p>{user.email}</p>
-                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                            <div className="flex flex-col items-center gap-2">
+                                <div className="flex items-center gap-2">
+                                    <p>{user.email}</p>
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
 
-                                    <div className="w-10 rounded-full">
-                                        <img src={user.photoURL} />
-                                    </div>
-                                </label>
+                                        <div className="w-10 rounded-full">
+                                            <img src={user.photoURL} />
+                                        </div>
+                                    </label>
+                                </div>
+
                                 <div>
                                     <button
                                         onClick={logOut}

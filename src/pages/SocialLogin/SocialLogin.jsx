@@ -4,6 +4,8 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
+import Swal from 'sweetalert2';
+
 const SocialLogin = () => {
 
     const { user, googleLogin, githubLogin } = useContext(AuthContext);
@@ -17,35 +19,48 @@ const SocialLogin = () => {
     const handleSocialLogin = (media) => {
         media()
             .then(() => {
-                toast.success("User Created Successfully")
+                Swal.fire({
+                    icon: 'success',
+                    title: 'OK...',
+                    text: "User Created Successfully",
+
+                })
                 navigate('/')
             })
             .catch(error => {
-                toast.error(error.massage)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...Try Again',
+                    text: error.message,
+
+                })
             })
     }
 
 
     return (
         <>
-            <div className="text-center mb-[10px]">continue with</div>
-            <div className="flex justify-around">
+            <div className="p-6">
+                <div className="text-center mb-[10px]">continue with</div>
+                <div className="">
 
-                <button
-                    onClick={() => handleSocialLogin(googleLogin)}
-                    className="btn btn-primary   text-black bg-[#F4E869]">Google
-                </button>
-
-
-                <button
-                    onClick={() => handleSocialLogin(githubLogin)}
-                    className="btn btn-primary   text-black bg-[#F4E869]">Github
-                </button>
+                    <button
+                        onClick={() => handleSocialLogin(googleLogin)}
+                        className="btn btn-primary w-full  text-black bg-[#F4E869] mb-[20px] p-4">Google
+                    </button>
+                    
 
 
+                    <button
+                        onClick={() => handleSocialLogin(githubLogin)}
+                        className="btn btn-primary  w-full text-black bg-[#F4E869]">Github
+                    </button>
 
 
 
+
+
+                </div>
             </div>
         </>
     );

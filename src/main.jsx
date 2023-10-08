@@ -20,11 +20,13 @@ import Speciality from './components/Speciality/Speciality';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Albam from './pages/Albam/Albam';
 import Festive from './components/Festive/Festive';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -55,7 +57,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/albam",
-        element: <Albam></Albam>
+        element: <PivateRoute><Albam></Albam></PivateRoute> 
 
       },
       {
