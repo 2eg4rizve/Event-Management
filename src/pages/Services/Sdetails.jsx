@@ -169,7 +169,7 @@ const Sdetails = () => {
                         <div className="card w-full h-[400px]  shadow-xl bg-[#F4E869]">
 
                             <div className="card-body  ">
-                                <h2 className="card-title font-bold text-center justify-center text-4xl">Glod</h2>
+                                <h2 className="card-title font-bold text-center justify-center text-4xl">Gold</h2>
                                 <p className='font-bold text-center justify-center text-3xl' >Price : {price + 2000}$ to {price + 4000}$ </p>
 
 
