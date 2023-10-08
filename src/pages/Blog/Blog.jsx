@@ -1,9 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { ScrollRestoration } from "react-router-dom";
 
 const Blog = () => {
     return (
         <div >
+            <ScrollRestoration />
 
             <h1 className="text-center text-5xl font-bold my-[50px]">  Blog </h1>
 

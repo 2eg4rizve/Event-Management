@@ -3,6 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
 import { useEffect } from 'react';
 
+import { ScrollRestoration } from "react-router-dom";
+
 const Speciality = () => {
 
     useEffect(() => {
@@ -60,8 +62,10 @@ const Speciality = () => {
                 </div>
             </div> */}
 
+            <ScrollRestoration />
 
-            <div className="mt-[50px]" data-aos = "fade-right">
+
+            <div className="mt-[50px]" data-aos="fade-right">
 
                 <div className="hero max-h-full" style={{ backgroundImage: 'url("/public/extra/Speciality1.avif")' }}>
                     <div className="hero-overlay bg-opacity-40"></div>

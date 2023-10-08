@@ -5,9 +5,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import { ScrollRestoration } from "react-router-dom";
+
 const Festive = () => {
     return (
         <div>
+             <ScrollRestoration />
             <div className='mt-[100px]'>
                 <p className='text-center text-5xl font-bold mb-[20px]'>Foods</p>
                 <Swiper

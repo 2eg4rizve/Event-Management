@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
 import { useEffect } from 'react';
 
+import { ScrollRestoration } from "react-router-dom";
 
 const About = () => {
 
@@ -12,7 +13,9 @@ const About = () => {
 
     }, [])
     return (
-        <div className="mt-[50px] max-h-full text-center font-bold bg-[url('/public/extra/about6.webp')] bg-no-repeat bg-cover " data-aos = "fade-left">
+        <div className="mt-[50px] max-h-full text-center font-bold bg-[url('/public/extra/about6.webp')] bg-no-repeat bg-cover " data-aos="fade-left">
+
+            <ScrollRestoration />
 
             <p className="text-5xl font-bold text-center my-[40px] pt-[40px]">ABOUT</p>
 

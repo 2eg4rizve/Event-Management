@@ -50,6 +50,8 @@ const Sdetails = () => {
     return (
         <div className=''>
 
+            <ScrollRestoration />
+
             Service Details : {id};
 
             <div className="text-5xl text-center font-bold">

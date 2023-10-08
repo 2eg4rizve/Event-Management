@@ -5,10 +5,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import { ScrollRestoration } from "react-router-dom";
+
 const Albam = () => {
     return (
         <div>
-            Albam pages
+             <ScrollRestoration />
+           
 
             <div className='mt-[100px]'>
                 <p className='text-center text-5xl font-bold mb-[20px]'>Weddings</p>

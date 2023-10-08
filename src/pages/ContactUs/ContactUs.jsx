@@ -4,6 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
 import { useEffect } from "react";
 
+import { ScrollRestoration } from "react-router-dom";
+
 const ContactUs = () => {
 
     useEffect(() => {
@@ -14,6 +16,7 @@ const ContactUs = () => {
 
     return (
         <div className="my-[50px] bg-[#F8FF95] p-[20px]" data-aos = "fade-up">
+            <ScrollRestoration />
             <h1 className="font-bold text-center text-5xl">Contact Us</h1>
             <div className="flex flex-col lg:flex-row pb-[50px]">
                 <div className="flex-1 flex justify-center items-center">
