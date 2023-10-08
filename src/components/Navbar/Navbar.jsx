@@ -40,18 +40,6 @@ const Navbar = () => {
             Services
         </NavLink>
 
-
-        <div className="mr-[20px]"></div>
-
-        <NavLink
-            to="/blog"
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
-            }
-        >
-            Blog
-        </NavLink>
-
         <div className="mr-[20px]"></div>
 
         <NavLink
@@ -66,12 +54,37 @@ const Navbar = () => {
         <div className="mr-[20px]"></div>
 
         <NavLink
+            to="/blog"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
+            }
+        >
+            Blog
+        </NavLink>
+
+
+        <div className="mr-[20px]"></div>
+
+        <NavLink
+            to="/albam"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
+            }
+        >
+            Album
+        </NavLink>
+
+
+
+        <div className="mr-[20px]"></div>
+
+        <NavLink
             to="/contactUs"
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
-           Contact Us
+            Contact Us
 
         </NavLink>
 

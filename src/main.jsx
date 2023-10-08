@@ -18,6 +18,7 @@ import Sdetails from './pages/Services/Sdetails';
 import PivateRoute from './components/PivateRoute/PivateRoute';
 import Speciality from './components/Speciality/Speciality';
 import ContactUs from './pages/ContactUs/ContactUs';
+import Albam from './pages/Albam/Albam';
 
 const router = createBrowserRouter([
   {
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog></Blog>
+        element: <PivateRoute><Blog></Blog></PivateRoute>
       },
       {
         path: "/speciality",
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
       {
         path: "/contactUs",
         element: <ContactUs></ContactUs>
+
+      },
+      {
+        path: "/albam",
+        element: <Albam></Albam>
 
       },
       {

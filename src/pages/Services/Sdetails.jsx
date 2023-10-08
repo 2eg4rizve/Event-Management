@@ -209,6 +209,28 @@ const Sdetails = () => {
                     </SwiperSlide>
 
 
+                    <SwiperSlide>
+                        <div className="card w-full h-[400px] bg-base-100 shadow-xl bg-[#F4E869]">
+
+                            <div className="card-body  ">
+                                <h2 className="card-title font-bold text-center justify-center text-4xl">Diamond</h2>
+                                <p className='font-bold text-center justify-center text-3xl' >Price : {price + 6000}$ to {price * 10}$ </p>
+
+
+                                <p className='text-center '>
+                                    Catering encompasses arranging food, snacks, and refreshments that suit the occasion, often with a touch of whimsy. Guest management involves handling guest invitations, RSVPs, and seating arrangements to ensure a harmonious gathering. Keepsakes or party favors are provided, offering guests a tangible memento of the special occasion. Overall, event managers strive to create a joyous and memorable atmosphere that celebrates the expectant mother and the exciting journey into parenthood.Baby shower event management centers on celebrating expectant mothers and the impending arrival of their child. The process starts with theme selection, choosing themes that reflect the baby's gender or nursery decor and coordinating decorations accordingly.
+
+                                </p>
+
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary w-full">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+
 
 
 
