@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-unused-vars */
 
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 import useAuth from '../../hooks/useAuth';
 import toast from 'react-hot-toast';
@@ -17,6 +17,8 @@ const Register = () => {
     const { createUser, handleUpdateProfile } = useAuth();
 
     const navigate = useNavigate();
+
+    const location = useLocation();
 
     const handleSubmit = (e) => {
 
@@ -73,7 +75,7 @@ const Register = () => {
                             text: "User Created Successfully",
 
                         })
-                        navigate('/')
+                        navigate(location?.state ? location.state : '/')
                     })
             })
             .catch(error => {

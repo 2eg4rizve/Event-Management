@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Swal from 'sweetalert2';
 
@@ -13,6 +13,8 @@ const SocialLogin = () => {
     // console.log(user)
 
     const navigate = useNavigate();
+
+    const location = useLocation();
 
 
 
@@ -25,7 +27,7 @@ const SocialLogin = () => {
                     text: "User Created Successfully",
 
                 })
-                navigate('/')
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 Swal.fire({
