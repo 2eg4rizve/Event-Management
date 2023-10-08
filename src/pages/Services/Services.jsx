@@ -33,7 +33,7 @@ const Services = () => {
 
             <h1 className="text-5xl font-bold text-center">Services</h1>
 
-            <div className="grid  grid-cols-1 lg:grid-cols-3 gap-7 " data-aos = "fade-up">
+            <div className="grid  grid-cols-1 lg:grid-cols-3 gap-7 " data-aos = "slide-up">
 
                 {
                     services.map(service => <SCards key={service.id} service={service}></SCards>)

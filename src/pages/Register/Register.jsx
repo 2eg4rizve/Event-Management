@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable no-unused-vars */
 
 import { Link, Navigate, useNavigate } from 'react-router-dom';
@@ -6,10 +7,13 @@ import useAuth from '../../hooks/useAuth';
 import toast from 'react-hot-toast';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
+import Swal from 'sweetalert2';
+
+
 
 const Register = () => {
 
-   
+
     const { createUser, handleUpdateProfile } = useAuth();
 
     const navigate = useNavigate();
@@ -26,8 +30,35 @@ const Register = () => {
 
         console.log(name, email, img, password);
 
-        if (password.length < 1) {
-            toast.error('password must be greater then 0 charter')
+        if (password.length < 6) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Password Should be at least 6 Characters.',
+
+            })
+            return;
+        }
+        else if (!/[A-Z]/.test(password)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Password Should have at least one capital letter.',
+
+            })
+
+            return;
+        }
+        else if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/\|]/.test(password)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Password Should have at least one special character.',
+
+            })
+
+            return;
+
         }
 
         //creating a new user
@@ -36,12 +67,22 @@ const Register = () => {
             .then(res => {
                 handleUpdateProfile(name, img)
                     .then(() => {
-                        toast.success("User Created Successfully")
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'OK...',
+                            text: "User Created Successfully",
+
+                        })
                         navigate('/')
                     })
             })
             .catch(error => {
-                toast.error(error.massage)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: error.message,
+
+                })
             })
 
 
@@ -54,7 +95,7 @@ const Register = () => {
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Register now!</h1>
-                        
+
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit} className="card-body">
@@ -92,7 +133,7 @@ const Register = () => {
                             </div>
 
                             <label className="label">
-                                Have an account? <Link to="/login" className="label-text-alt link link-hover">Please Login</Link>
+                                Have an account? <Link to="/login" className="label-text-alt link link-hover text-blue-800 font-black">Please Login</Link>
                             </label>
                             <SocialLogin />
                         </form>

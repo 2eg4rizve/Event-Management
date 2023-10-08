@@ -1,8 +1,18 @@
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import { useEffect } from 'react';
+
 
 const About = () => {
+
+    useEffect(() => {
+
+        AOS.init();
+
+    }, [])
     return (
-        <div className="mt-[50px] max-h-full text-center font-bold bg-[url('/public/extra/about6.webp')] bg-no-repeat bg-cover ">
+        <div className="mt-[50px] max-h-full text-center font-bold bg-[url('/public/extra/about6.webp')] bg-no-repeat bg-cover " data-aos = "fade-left">
 
             <p className="text-5xl font-bold text-center my-[40px] pt-[40px]">ABOUT</p>
 
@@ -26,7 +36,7 @@ const About = () => {
 
                 <br />
                 <br />
-                
+
                 We are flexible and accommodating, and I will work with you to create an event that meets your specific needs.
                 We are affordable and offer a variety of packages to fit your budget.
 
@@ -34,7 +44,7 @@ const About = () => {
 
 
             </p>
-          
+
 
 
 

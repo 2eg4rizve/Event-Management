@@ -7,12 +7,25 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import { useEffect } from 'react';
+
 const Tier = () => {
+
+    
+    useEffect(() => {
+
+        AOS.init();
+
+    }, [])
+
+
     return (
-        <div>
+        <div data-aos = "flip-up">
            
 
-            <div className='mt-[50px]'>
+            <div className='mt-[100px] mb-[100px]'>
                 <p className='text-center text-5xl font-bold mb-[20px]'>Tier List For Price</p>
                 <Swiper
                     style={{

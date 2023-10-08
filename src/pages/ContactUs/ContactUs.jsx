@@ -1,9 +1,19 @@
 import { Link } from "react-router-dom";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import { useEffect } from "react";
 
 const ContactUs = () => {
+
+    useEffect(() => {
+
+        AOS.init();
+
+    }, [])
+
     return (
-        <div className="my-[50px] bg-[#F8FF95] p-[20px]">
+        <div className="my-[50px] bg-[#F8FF95] p-[20px]" data-aos = "fade-up">
             <h1 className="font-bold text-center text-5xl">Contact Us</h1>
             <div className="flex flex-col lg:flex-row pb-[50px]">
                 <div className="flex-1 flex justify-center items-center">

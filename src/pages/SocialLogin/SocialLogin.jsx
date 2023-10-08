@@ -28,7 +28,7 @@ const SocialLogin = () => {
 
     return (
         <>
-            <div className="divider">continue with</div>
+            <div className="text-center mb-[10px]">continue with</div>
             <div className="flex justify-around">
 
                 <button

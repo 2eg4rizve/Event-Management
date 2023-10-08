@@ -1,10 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import { useEffect } from 'react';
+
+
 const Faq = () => {
+
+    useEffect(() => {
+
+        AOS.init();
+
+    }, [])
+
+
     return (
 
-        <div className="my-[50px] bg-[#F8FF95]">
+        <div className="my-[50px] bg-[#F8FF95]" data-aos = "fade-up">
 
             <h1 className="text-5xl font-bold text-center pt-[20px]">Frequently Asked Questions </h1>
 

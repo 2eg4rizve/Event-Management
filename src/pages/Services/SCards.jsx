@@ -17,14 +17,16 @@ const SCards = ({ service }) => {
 
                 <div className="card-body h-[300px] text-center">
 
-                    <h2> id : {id}</h2>
+                    {/* <h2> id : {id}</h2> */}
 
                     <h2 className="card-title text-center justify-center">{name}</h2>
 
                     <p>{short_description}</p>
 
+                     <p className="font-bold">Price :  {price}$ to {price*10}$ </p>
+
                    
-                    <Link to={`/serviceDetails/${id}`}>
+                    <Link to={`/serviceDetails/${id}` }>
 
                         <button className="btn btn-primary w-full bg-[#F4E869] text-black">View Details</button>
 

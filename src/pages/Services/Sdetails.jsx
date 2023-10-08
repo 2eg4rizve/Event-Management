@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Speciality from '../../components/Speciality/Speciality';
 
+import { ScrollRestoration } from "react-router-dom";
+
 
 import Marquee from "react-fast-marquee";
 

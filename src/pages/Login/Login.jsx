@@ -4,7 +4,7 @@ import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import toast from "react-hot-toast";
-
+import Swal from 'sweetalert2';
 
 const Login = () => {
 
@@ -13,6 +13,7 @@ const Login = () => {
     const { signIn } = useContext(AuthContext);
 
     const location = useLocation();
+
 
 
 
@@ -29,12 +30,25 @@ const Login = () => {
 
         signIn(email, password)
             .then(() => {
-                toast.success("User logged in Successfully");
+                Swal.fire({
+                    icon: 'success',
+                    title: 'OK...',
+                    text: "User logged in Successfully",
+                   
+                })
+               
                 navigate(location?.state ? location.state : '/')
 
             })
             .catch(error => {
-                toast.error(error.message)
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: error.message,
+                   
+                })
+               
             })
 
     }
@@ -73,7 +87,7 @@ const Login = () => {
                             </div>
 
                             <div className="form-control mt-6 p-0">
-                                <button type='submit' className="btn btn-neutral text-black bg-[#F4E869]">Login</button>
+                                <button type='submit' className="btn btn-primary text-black bg-[#F4E869]">Login</button>
                             </div>
 
                             <label className="label">
