@@ -11,7 +11,7 @@ const SCards = ({ service }) => {
     return (
         <div className="mt-[50px]">
 
-            <div className="card bg-base-100 shadow-xl text-center">
+            <div className="card bg-base-100 shadow-xl text-center bg-[#FFF8C9]">
 
                 <figure><img className="w-full h-[300px]" src={image_main} alt="Shoes" /></figure>
 

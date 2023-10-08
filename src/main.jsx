@@ -19,6 +19,7 @@ import PivateRoute from './components/PivateRoute/PivateRoute';
 import Speciality from './components/Speciality/Speciality';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Albam from './pages/Albam/Albam';
+import Festive from './components/Festive/Festive';
 
 const router = createBrowserRouter([
   {
@@ -53,13 +54,17 @@ const router = createBrowserRouter([
 
       },
       {
-        path: "/contactUs",
-        element: <ContactUs></ContactUs>
+        path: "/albam",
+        element: <Albam></Albam>
 
       },
       {
-        path: "/albam",
-        element: <Albam></Albam>
+        path: "/festive",
+        element: <PivateRoute><Festive></Festive></PivateRoute>
+      },
+      {
+        path: "/contactUs",
+        element: <ContactUs></ContactUs>
 
       },
       {
@@ -71,7 +76,7 @@ const router = createBrowserRouter([
         element: <Register></Register>
 
       }
-      
+
     ]
   },
 ]);

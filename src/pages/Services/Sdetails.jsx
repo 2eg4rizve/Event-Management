@@ -146,7 +146,7 @@ const Sdetails = () => {
 
                 >
                     <SwiperSlide>
-                        <div className="card w-full h-[400px] bg-base-100 shadow-xl bg-[#F4E869]">
+                        <div className="card w-full h-[400px] shadow-xl bg-[#F4E869]">
 
                             <div className="card-body  ">
                                 <h2 className="card-title font-bold text-center justify-center text-4xl">Silver</h2>
@@ -166,7 +166,7 @@ const Sdetails = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="card w-full h-[400px] bg-base-100 shadow-xl bg-[#F4E869]">
+                        <div className="card w-full h-[400px]  shadow-xl bg-[#F4E869]">
 
                             <div className="card-body  ">
                                 <h2 className="card-title font-bold text-center justify-center text-4xl">Glod</h2>
@@ -187,7 +187,7 @@ const Sdetails = () => {
 
 
                     <SwiperSlide>
-                        <div className="card w-full h-[400px] bg-base-100 shadow-xl bg-[#F4E869]">
+                        <div className="card w-full h-[400px]  shadow-xl bg-[#F4E869]">
 
                             <div className="card-body  ">
                                 <h2 className="card-title font-bold text-center justify-center text-4xl">Premium</h2>
@@ -210,7 +210,7 @@ const Sdetails = () => {
 
 
                     <SwiperSlide>
-                        <div className="card w-full h-[400px] bg-base-100 shadow-xl bg-[#F4E869]">
+                        <div className="card w-full h-[400px] shadow-xl bg-[#F4E869]">
 
                             <div className="card-body  ">
                                 <h2 className="card-title font-bold text-center justify-center text-4xl">Diamond</h2>

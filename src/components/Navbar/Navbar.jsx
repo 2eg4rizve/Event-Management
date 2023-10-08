@@ -74,6 +74,17 @@ const Navbar = () => {
             Album
         </NavLink>
 
+        <div className="mr-[20px]"></div>
+
+        <NavLink
+            to="/festive"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
+            }
+        >
+            Festive
+        </NavLink>
+
 
 
         <div className="mr-[20px]"></div>
