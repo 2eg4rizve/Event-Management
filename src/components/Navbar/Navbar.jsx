@@ -135,7 +135,11 @@ const Navbar = () => {
                         user?.email ? <div className="dropdown dropdown-end">
                             <div className="flex flex-col items-center gap-2">
                                 <div className="flex items-center gap-2">
-                                    <p>{user.email}</p>
+                                    <div className=" flex flex-col justify-center">
+                                        <p>{user.displayName}</p>
+
+                                    </div>
+
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
 
                                         <div className="w-10 rounded-full">
@@ -145,6 +149,7 @@ const Navbar = () => {
                                 </div>
 
                                 <div>
+                                    
                                     <button
                                         onClick={logOut}
                                         className="btn btn-sm  btn-primary bg-[#F4E869] text-black">Logout</button>
