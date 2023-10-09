@@ -20,9 +20,13 @@ console.log(greetign);
 
 #### Answer: ?
 
-Ans -> A: {}
+Ans -> A: `{}`
+<br>
+Here we directly assigning an empty object ' {} ' to a variable called greetign without declaring it using let ,ver , const . But this will not result in an error .
+<br>
+In this case ,javaScript will implicitly create a global variable called greetign .
 
-here we directly assigning an empty object ' {} ' to a variable called greetign without declaring it using let ,ver , const . But this will not result in an error .In this case ,javaScript will implicitly create a global variable called greetign .
+<br>
 
 So , the correct ans is Option -> A : {}
 
@@ -49,7 +53,16 @@ sum(1, "2");
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+Ans ->  C: `"12"`
+
+<br>
+
+in sum function we are trying to add a number 1 and a string "2" . the second argument is a string ,so javaScript performs string concatenation ,not addition so, the result is "12"
+<br>
+basically javaScript converts the number 1 into string and then performs string concatenation.
+<br>
+So , the correct ans is Option -> C: "12"
+<br>
 
 </p>
 </details>
@@ -75,7 +88,18 @@ console.log(food);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+Ans -> A: `['🍕', '🍫', '🥑', '🍔']`
+
+The food array is not modified when you change the info.favoriteFood property. 
+<br>
+Since the food and info.favoriteFood variables are pointing to two different objects, changing the value of info.favoriteFood does not change the value of the food
+<br>
+Therefore, it remains the same with the original values: ["🍕", "🍫", "🥑", "🍔"].
+<br>
+
+So , the correct ans is Option -> A: `['🍕', '🍫', '🥑', '🍔']`
+
+
 
 </p>
 </details>
@@ -100,7 +124,19 @@ console.log(sayHi());
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+Ans -> B: `Hi there, undefined`
+<br>
+
+This is because sayHi() function is called without passing any argument ,so the name parameter will have the value undefined.
+<br>
+when we call 'sayHi()' without passing any argument ,javaScript sets 'name' to 'undefined' beacuse no value was provided .
+<br>
+As a result , the function return Hi there, undefined .Because is is concatenating the string
+"Hi there" with the value of name which is undefined.
+<br>
+So , the correct ans is Option -> B: Hi there, undefined
+<br>
+<br>
 
 </p>
 </details>
@@ -128,7 +164,22 @@ console.log(count);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+Ans -> C: 3
+
+Here count is initialized to 0.
+<br>
+the nums array contains the values [0,1,2,3].
+<br>
+The forEach method iterates through each element of the nums array using an arrow function.
+<br>
+0 is falsy, so count remains 0. <br>
+1 is truthy, so count is incremented to 1. <br>
+2 is truthy, so count is incremented to 2. <br>
+3 is truthy, so count is incremented to 3. <br>
+
+<br>
+So , the correct ans is Option -> C: 3
+<br>
 
 </p>
 </details>
