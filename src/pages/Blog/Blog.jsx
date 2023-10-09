@@ -77,6 +77,8 @@ const Blog = () => {
 
                 <textarea className="textarea border-[#F4E869] border-2 w-full min-h-[200px]" placeholder="Type Your Comment"></textarea>
 
+                <button className="btn btn-primary text-black w-full bg-[#F4E869]">Submit</button>
+
             </div>
         </div>
     );
