@@ -52,7 +52,7 @@ const Sdetails = () => {
 
             <ScrollRestoration />
 
-            Service Details : {id};
+            {/* Service Details : {id}; */}
 
             <div className="text-5xl text-center font-bold">
                 {name}
@@ -116,7 +116,7 @@ const Sdetails = () => {
             <div>
                 <h1 className='text-center text-5xl font-bold my-[50px]'> Features</h1>
 
-                <p className='font-semibold '>
+                <p className='font-semibold p-5'>
                     {features}
                     {features}
                 </p>
