@@ -9,7 +9,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 
 import Swal from 'sweetalert2';
 
-
+import { ScrollRestoration } from "react-router-dom";
 
 const Register = () => {
 
@@ -94,6 +94,7 @@ const Register = () => {
     return (
         <>
             <div className="hero min-h-screen bg-base-200">
+                <ScrollRestoration />
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Register now!</h1>
@@ -137,7 +138,7 @@ const Register = () => {
                             <label className="label">
                                 Have an account? <Link to="/login" className="label-text-alt link link-hover text-blue-800 font-black">Please Login</Link>
                             </label>
-                           
+
                         </form>
                         <SocialLogin />
                     </div>

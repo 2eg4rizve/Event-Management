@@ -6,6 +6,8 @@ import SocialLogin from "../SocialLogin/SocialLogin";
 import toast from "react-hot-toast";
 import Swal from 'sweetalert2';
 
+import { ScrollRestoration } from "react-router-dom";
+
 const Login = () => {
 
     const navigate = useNavigate();
@@ -34,9 +36,9 @@ const Login = () => {
                     icon: 'success',
                     title: 'OK...',
                     text: "User logged in Successfully",
-                   
+
                 })
-               
+
                 navigate(location?.state ? location.state : '/')
 
             })
@@ -46,15 +48,17 @@ const Login = () => {
                     icon: 'error',
                     title: 'Oops...',
                     text: error.message,
-                   
+
                 })
-               
+
             })
 
     }
 
     return (
         <div>
+
+            <ScrollRestoration />
 
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
@@ -95,7 +99,7 @@ const Login = () => {
                             </label>
 
 
-                          
+
 
 
                         </form>
