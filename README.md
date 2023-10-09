@@ -1,6 +1,7 @@
 Project No : 2 . <br>
 Project Name : Social Events . <br>
-Project Link : https://assingnment-9.web.app <br>
+Project Link : https://assingnment-9.web.app
+<br>
 
 <br>
 Project Features :
