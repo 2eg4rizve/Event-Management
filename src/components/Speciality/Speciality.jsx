@@ -67,12 +67,12 @@ const Speciality = () => {
 
             <div className="mt-[50px]" data-aos="fade-up">
 
-                <div className="hero max-h-full" style={{ backgroundImage: 'url("/public/extra/Speciality1.avif")' }}>
-                    <div className="hero-overlay bg-opacity-40"></div>
-                    <div className="hero-content  text-neutral-content">
+                <div className="hero max-h-full" style={{ backgroundImage: 'url("https://i.ibb.co/Km11bmB/vecteur-abstrait-fond-sans-couture.jpg")' }}>
+                    <div className="hero-overlay bg-opacity-0"></div>
+                    <div className="hero-content  text-black">
                         <div className="">
-                            <h1 className="mb-5 text-5xl text-white  font-bold text-center">Speciality</h1>
-                            <div className="font-bold text-white mt-[40px] text-[20px] space-y-4 p-10 ">
+                            <h1 className="mb-5 text-5xl text-black  font-bold text-center">Speciality</h1>
+                            <div className="font-bold text-black mt-[40px] text-[20px] space-y-4 p-10 ">
                                 <li>
                                     Event Theme Generator: Provide users with a tool that generates creative and personalized event themes based on their preferences, making it easier to plan a cohesive and visually appealing event.
                                 </li>
