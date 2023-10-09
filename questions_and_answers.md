@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
 Ans -> A: `{}`
 <br>
@@ -51,7 +51,7 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
 Ans ->  C: `"12"`
 
@@ -86,7 +86,7 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
 Ans -> A: `['🍕', '🍫', '🥑', '🍔']`
 
@@ -122,7 +122,7 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
 Ans -> B: `Hi there, undefined`
 <br>
@@ -162,7 +162,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
 Ans -> C: 3
 
