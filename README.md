@@ -1,8 +1,10 @@
-Project No : 2 .
-Project Name : Social Events .
-Project Link : https://assingnment-9.web.app
+Project No : 2 . <br>
+Project Name : Social Events . <br>
+Project Link : https://assingnment-9.web.app <br>
 
-Project features :
+<br>
+Project Features :
+<br>
 
 • We can see many different kind of Social Events Services. <br>
 
@@ -15,8 +17,6 @@ Baby Shower , Holiday Party ,Corporate Event ,Cultural Event <br>
 
 •User can easily login using email or using google logging.<br>
 
-•User can easily see email name and image in navbar after they are login or register .<br>
-
 •In project there are some private route . so that only authorized
 person can see that information.<br>
 
@@ -26,13 +26,23 @@ person can see that information.<br>
 
 •In project there are beautiful banner section. here we see different kind of picture and they come one by one automatically and also have carousel button.<br>
 
-•User can see service details when they are logged in in this site.<br>
+•User can see full  service details when they are logged in in this site.<br>
+
+•User can easily understand us by seeing About Session.<br>
+
+•User can easily know our Specialty by reading our Specialty option <br>
 
 •User can easily contact by using Contact Us session <br>
 
-•We have a blog section and this is private route. here people can see different kind of blog and comment.<br>
+•User can easily understand price list from Tier List Of Price <br>
 
-•We have album section , and only authenticated person see this beautiful section.here different type picture have . and they are divided by category<br>
+•Our website is very user friendly <br>
+
+•In our website we use deferent type of animation <br>
+
+•We have a Blog section and this is private route. here people can see different kind of blog and comment.<br>
+
+•We have Album section , and only authenticated person see this beautiful section.here different type picture have . and they are divided by category<br>
 
 •In project there are Festive section . where we discuss Foods , Drinks ,Music,Dance ,Fun , Games etc .<br>
 

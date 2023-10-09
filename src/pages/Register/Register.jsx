@@ -137,8 +137,9 @@ const Register = () => {
                             <label className="label">
                                 Have an account? <Link to="/login" className="label-text-alt link link-hover text-blue-800 font-black">Please Login</Link>
                             </label>
-                            <SocialLogin />
+                           
                         </form>
+                        <SocialLogin />
                     </div>
                 </div>
             </div>

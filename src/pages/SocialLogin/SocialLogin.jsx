@@ -24,7 +24,7 @@ const SocialLogin = () => {
                 Swal.fire({
                     icon: 'success',
                     title: 'OK...',
-                    text: "User Created Successfully",
+                    text: "Welcome! Your Account Is Now Active",
 
                 })
                 navigate(location?.state ? location.state : '/')
@@ -42,7 +42,7 @@ const SocialLogin = () => {
 
     return (
         <>
-            <div className="p-6">
+            <div className="px-6 pb-6">
                 <div className="text-center mb-[10px]">continue with</div>
                 <div className="">
 
